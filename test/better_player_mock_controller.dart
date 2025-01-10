@@ -1,4 +1,4 @@
-import 'package:better_player_enhanced/better_player.dart';
+import 'package:better_player_enhanced_me/better_player.dart';
 
 class BetterPlayerMockController extends BetterPlayerController {
   BetterPlayerMockController(

@@ -16,7 +16,7 @@ $ flutter pub get
 3. Import it
 
 ```dart
-import 'package:better_player_enhanced/better_player.dart';
+import 'package:better_player_enhanced_me/better_player.dart';
 ```
 
 4. (Required) iOS configuration

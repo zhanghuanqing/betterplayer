@@ -6,7 +6,7 @@ environment:
   sdk: ">=3.4.1 <4.0.0"
 
 dependencies:
-  better_player_enhanced:
+  better_player_enhanced_me:
     path: ../
   flutter:
     sdk: flutter

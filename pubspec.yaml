@@ -1,4 +1,4 @@
-name: better_player_enhanced
+name: better_player_enhanced_me
 description: Advanced video player. It solves many typical use cases and it's easy to run.
 version: 0.0.5
 homepage: https://github.com/kingace2056/betterplayer
@@ -31,7 +31,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.sarthak.better_player_enhanced
+        package: com.sarthak.better_player_enhanced_me
         pluginClass: BetterPlayerPlugin
       ios:
         pluginClass: BetterPlayerPlugin

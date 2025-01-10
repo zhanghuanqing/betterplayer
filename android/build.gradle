@@ -1,4 +1,4 @@
-group ' com.sarthak.better_player_enhanced.better_player'
+group ' com.sarthak.better_player_enhanced_me.better_player'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -33,7 +33,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
-    namespace 'com.sarthak.better_player_enhanced'
+    namespace 'com.sarthak.better_player_enhanced_me'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

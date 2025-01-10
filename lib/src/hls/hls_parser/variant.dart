@@ -1,4 +1,4 @@
-import 'package:better_player_enhanced/src/hls/hls_parser/format.dart';
+import 'package:better_player_enhanced_me/src/hls/hls_parser/format.dart';
 
 class Variant {
   Variant({

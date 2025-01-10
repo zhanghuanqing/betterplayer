@@ -1,11 +1,11 @@
-package  com.sarthak.better_player_enhanced
+package  com.sarthak.better_player_enhanced_me
 
 import android.content.Context
 import android.net.Uri
 import android.util.Log
-import  com.sarthak.better_player_enhanced.DataSourceUtils.isHTTP
-import  com.sarthak.better_player_enhanced.DataSourceUtils.getUserAgent
-import  com.sarthak.better_player_enhanced.DataSourceUtils.getDataSourceFactory
+import  com.sarthak.better_player_enhanced_me.DataSourceUtils.isHTTP
+import  com.sarthak.better_player_enhanced_me.DataSourceUtils.getUserAgent
+import  com.sarthak.better_player_enhanced_me.DataSourceUtils.getDataSourceFactory
 import androidx.work.WorkerParameters
 import com.google.android.exoplayer2.upstream.cache.CacheWriter
 import androidx.work.Worker
