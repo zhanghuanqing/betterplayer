@@ -39,16 +39,36 @@ class BetterPlayerAsmsUtils {
     Map<String, String?>? headers,
   ]) async {
     try {
-      final request = await _httpClient.getUrl(Uri.parse(url));
+      HttpClientRequest request;
+
+      try {
+        Uri theurl = Uri.parse(url);
+        request = await _httpClient.getUrl(theurl);
+
+        BetterPlayerUtils.log("------------------------------------------");
+        BetterPlayerUtils.log(theurl.toString());
+      } catch (e) {
+        print('Failed to open URL: $e');
+        return null;
+      }
+
       if (headers != null) {
         headers.forEach((name, value) => request.headers.add(name, value!));
+
+        BetterPlayerUtils.log("------------------------------------------");
+        BetterPlayerUtils.log(request.headers.toString());
       }
 
       final response = await request.close();
-      var data = "";
-      await response.transform(const Utf8Decoder()).listen((content) {
-        data += content.toString();
-      }).asFuture<String?>();
+      // var data = "";
+      // await response.transform(const Utf8Decoder()).listen((content) {
+      //   data += content.toString();
+      // }).asFuture<String?>();
+
+      var data = await response.transform(utf8.decoder).join();
+
+      BetterPlayerUtils.log("------------------------------------------");
+      BetterPlayerUtils.log(data);
 
       return data;
     } catch (exception) {
